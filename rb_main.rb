@@ -3,7 +3,6 @@
 # mrHost
 #
 # Created by Shawn Anderson on 11/19/08.
-# Copyright Edmunds Inc 2008. All rights reserved.
 #
 
 # Loading the Cocoa framework. If you need to load more frameworks, you can
@@ -13,14 +12,14 @@ framework 'Cocoa'
 # Loading all the Ruby project files.
 dir_path = NSBundle.mainBundle.resourcePath.fileSystemRepresentation
 Dir.entries(dir_path).each do |path|
-    if path != File.basename(__FILE__) and path[-3..-1] == '.rb'
-        require(path)
-    end
+  if path != File.basename(__FILE__) and path[-3..-1] == '.rb'
+    require(path)
+  end
 end
 
 def swap_env(sender)
-    $host.set_host sender.title
-    $item.title = $host.get_current_env
+  $host.set_host sender.title
+  $item.title = $host.get_current_env
 end
 
 $host = Host.new
@@ -45,7 +44,7 @@ $host.env_names.each do |env|
 	opt.title = env
 	opt.action = "swap_env:"
 	opt.enabled = true
-    
+
 	menu.addItem(opt)
 end
 

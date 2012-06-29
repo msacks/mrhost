@@ -1,0 +1,387 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F2767DAE159D6EA8008B5B71 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2767DAD159D6EA8008B5B71 /* Cocoa.framework */; };
+		F2767DB0159D6EA8008B5B71 /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2767DAF159D6EA8008B5B71 /* MacRuby.framework */; };
+		F2767DB9159D6EA8008B5B71 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F2767DB7159D6EA8008B5B71 /* InfoPlist.strings */; };
+		F2767DBB159D6EA8008B5B71 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F2767DBA159D6EA8008B5B71 /* main.m */; };
+		F2767DC0159D6EA8008B5B71 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2767DBE159D6EA8008B5B71 /* MainMenu.xib */; };
+		F2767DC3159D6EA9008B5B71 /* rb_main.rb in Resources */ = {isa = PBXBuildFile; fileRef = F2767DC2159D6EA8008B5B71 /* rb_main.rb */; };
+		F2767DC5159D6EA9008B5B71 /* AppDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = F2767DC4159D6EA9008B5B71 /* AppDelegate.rb */; };
+		F2767DCF159D6EE0008B5B71 /* utterface_background.png in Resources */ = {isa = PBXBuildFile; fileRef = F2767DCE159D6EE0008B5B71 /* utterface_background.png */; };
+		F2767DD1159D6EE8008B5B71 /* rhost_env.txt in Resources */ = {isa = PBXBuildFile; fileRef = F2767DD0159D6EE8008B5B71 /* rhost_env.txt */; };
+		F2767DD3159D6EFA008B5B71 /* cached_global_hosts.yml in Resources */ = {isa = PBXBuildFile; fileRef = F2767DD2159D6EFA008B5B71 /* cached_global_hosts.yml */; };
+		F2767DD5159D6F00008B5B71 /* config.yml in Resources */ = {isa = PBXBuildFile; fileRef = F2767DD4159D6F00008B5B71 /* config.yml */; };
+		F2767DD7159D6F19008B5B71 /* global_hosts.yml in Resources */ = {isa = PBXBuildFile; fileRef = F2767DD6159D6F19008B5B71 /* global_hosts.yml */; };
+		F2767DD9159D6F24008B5B71 /* local_hosts.yml in Resources */ = {isa = PBXBuildFile; fileRef = F2767DD8159D6F24008B5B71 /* local_hosts.yml */; };
+		F2767DDB159D6F2A008B5B71 /* host.rb in Resources */ = {isa = PBXBuildFile; fileRef = F2767DDA159D6F2A008B5B71 /* host.rb */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F2767DB2159D6EA8008B5B71 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F2767DA0159D6EA8008B5B71 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2767DA8159D6EA8008B5B71;
+			remoteInfo = mrhost;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F2767DA9159D6EA8008B5B71 /* mrhost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mrhost.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2767DAD159D6EA8008B5B71 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		F2767DAF159D6EA8008B5B71 /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = Library/Frameworks/MacRuby.framework; sourceTree = DEVELOPER_DIR; };
+		F2767DB6159D6EA8008B5B71 /* mrhost-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "mrhost-Info.plist"; sourceTree = "<group>"; };
+		F2767DB8159D6EA8008B5B71 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F2767DBA159D6EA8008B5B71 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F2767DBC159D6EA8008B5B71 /* mrhost-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "mrhost-Prefix.pch"; sourceTree = "<group>"; };
+		F2767DBF159D6EA8008B5B71 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		F2767DC2159D6EA8008B5B71 /* rb_main.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = rb_main.rb; sourceTree = "<group>"; };
+		F2767DC4159D6EA9008B5B71 /* AppDelegate.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = AppDelegate.rb; sourceTree = "<group>"; };
+		F2767DCE159D6EE0008B5B71 /* utterface_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = utterface_background.png; sourceTree = "<group>"; };
+		F2767DD0159D6EE8008B5B71 /* rhost_env.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rhost_env.txt; sourceTree = "<group>"; };
+		F2767DD2159D6EFA008B5B71 /* cached_global_hosts.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cached_global_hosts.yml; sourceTree = "<group>"; };
+		F2767DD4159D6F00008B5B71 /* config.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = config.yml; sourceTree = "<group>"; };
+		F2767DD6159D6F19008B5B71 /* global_hosts.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = global_hosts.yml; sourceTree = "<group>"; };
+		F2767DD8159D6F24008B5B71 /* local_hosts.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = local_hosts.yml; sourceTree = "<group>"; };
+		F2767DDA159D6F2A008B5B71 /* host.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = host.rb; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F2767DA6159D6EA8008B5B71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2767DAE159D6EA8008B5B71 /* Cocoa.framework in Frameworks */,
+				F2767DB0159D6EA8008B5B71 /* MacRuby.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F2767D9E159D6EA8008B5B71 = {
+			isa = PBXGroup;
+			children = (
+				F2767DB4159D6EA8008B5B71 /* mrhost */,
+				F2767DAC159D6EA8008B5B71 /* Frameworks */,
+				F2767DAA159D6EA8008B5B71 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F2767DAA159D6EA8008B5B71 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F2767DA9159D6EA8008B5B71 /* mrhost.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F2767DAC159D6EA8008B5B71 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F2767DAD159D6EA8008B5B71 /* Cocoa.framework */,
+				F2767DAF159D6EA8008B5B71 /* MacRuby.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F2767DB4159D6EA8008B5B71 /* mrhost */ = {
+			isa = PBXGroup;
+			children = (
+				F2767DC4159D6EA9008B5B71 /* AppDelegate.rb */,
+				F2767DBD159D6EA8008B5B71 /* Resources */,
+				F2767DC1159D6EA8008B5B71 /* Other Sources */,
+				F2767DB5159D6EA8008B5B71 /* Supporting Files */,
+			);
+			path = mrhost;
+			sourceTree = "<group>";
+		};
+		F2767DB5159D6EA8008B5B71 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F2767DB6159D6EA8008B5B71 /* mrhost-Info.plist */,
+				F2767DB7159D6EA8008B5B71 /* InfoPlist.strings */,
+				F2767DBA159D6EA8008B5B71 /* main.m */,
+				F2767DBC159D6EA8008B5B71 /* mrhost-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F2767DBD159D6EA8008B5B71 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F2767DDA159D6F2A008B5B71 /* host.rb */,
+				F2767DD8159D6F24008B5B71 /* local_hosts.yml */,
+				F2767DD6159D6F19008B5B71 /* global_hosts.yml */,
+				F2767DD4159D6F00008B5B71 /* config.yml */,
+				F2767DD2159D6EFA008B5B71 /* cached_global_hosts.yml */,
+				F2767DD0159D6EE8008B5B71 /* rhost_env.txt */,
+				F2767DCE159D6EE0008B5B71 /* utterface_background.png */,
+				F2767DBE159D6EA8008B5B71 /* MainMenu.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		F2767DC1159D6EA8008B5B71 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				F2767DC2159D6EA8008B5B71 /* rb_main.rb */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		F2767DB1159D6EA8008B5B71 /* Deployment */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "--compile --embed";
+			buildConfigurationList = F2767DCB159D6EA9008B5B71 /* Build configuration list for PBXLegacyTarget "Deployment" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/local/bin/macruby_deploy;
+			dependencies = (
+				F2767DB3159D6EA8008B5B71 /* PBXTargetDependency */,
+			);
+			name = Deployment;
+			passBuildSettingsInEnvironment = 1;
+			productName = Deployment;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXNativeTarget section */
+		F2767DA8159D6EA8008B5B71 /* mrhost */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2767DC8159D6EA9008B5B71 /* Build configuration list for PBXNativeTarget "mrhost" */;
+			buildPhases = (
+				F2767DA5159D6EA8008B5B71 /* Sources */,
+				F2767DA6159D6EA8008B5B71 /* Frameworks */,
+				F2767DA7159D6EA8008B5B71 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = mrhost;
+			productName = mrhost;
+			productReference = F2767DA9159D6EA8008B5B71 /* mrhost.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F2767DA0159D6EA8008B5B71 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = F2767DA3159D6EA8008B5B71 /* Build configuration list for PBXProject "mrhost" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F2767D9E159D6EA8008B5B71;
+			productRefGroup = F2767DAA159D6EA8008B5B71 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F2767DA8159D6EA8008B5B71 /* mrhost */,
+				F2767DB1159D6EA8008B5B71 /* Deployment */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F2767DA7159D6EA8008B5B71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2767DB9159D6EA8008B5B71 /* InfoPlist.strings in Resources */,
+				F2767DC0159D6EA8008B5B71 /* MainMenu.xib in Resources */,
+				F2767DC3159D6EA9008B5B71 /* rb_main.rb in Resources */,
+				F2767DC5159D6EA9008B5B71 /* AppDelegate.rb in Resources */,
+				F2767DCF159D6EE0008B5B71 /* utterface_background.png in Resources */,
+				F2767DD1159D6EE8008B5B71 /* rhost_env.txt in Resources */,
+				F2767DD3159D6EFA008B5B71 /* cached_global_hosts.yml in Resources */,
+				F2767DD5159D6F00008B5B71 /* config.yml in Resources */,
+				F2767DD7159D6F19008B5B71 /* global_hosts.yml in Resources */,
+				F2767DD9159D6F24008B5B71 /* local_hosts.yml in Resources */,
+				F2767DDB159D6F2A008B5B71 /* host.rb in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F2767DA5159D6EA8008B5B71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2767DBB159D6EA8008B5B71 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F2767DB3159D6EA8008B5B71 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F2767DA8159D6EA8008B5B71 /* mrhost */;
+			targetProxy = F2767DB2159D6EA8008B5B71 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F2767DB7159D6EA8008B5B71 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2767DB8159D6EA8008B5B71 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F2767DBE159D6EA8008B5B71 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2767DBF159D6EA8008B5B71 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F2767DC6159D6EA9008B5B71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F2767DC7159D6EA9008B5B71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F2767DC9159D6EA9008B5B71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+					/Library/Frameworks,
+				);
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "mrhost/mrhost-Prefix.pch";
+				INFOPLIST_FILE = "mrhost/mrhost-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F2767DCA159D6EA9008B5B71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+					/Library/Frameworks,
+				);
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "mrhost/mrhost-Prefix.pch";
+				INFOPLIST_FILE = "mrhost/mrhost-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F2767DCC159D6EA9008B5B71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		F2767DCD159D6EA9008B5B71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F2767DA3159D6EA8008B5B71 /* Build configuration list for PBXProject "mrhost" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2767DC6159D6EA9008B5B71 /* Debug */,
+				F2767DC7159D6EA9008B5B71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2767DC8159D6EA9008B5B71 /* Build configuration list for PBXNativeTarget "mrhost" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2767DC9159D6EA9008B5B71 /* Debug */,
+				F2767DCA159D6EA9008B5B71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F2767DCB159D6EA9008B5B71 /* Build configuration list for PBXLegacyTarget "Deployment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2767DCC159D6EA9008B5B71 /* Debug */,
+				F2767DCD159D6EA9008B5B71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F2767DA0159D6EA8008B5B71 /* Project object */;
+}
