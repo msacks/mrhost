@@ -1,0 +1,8 @@
+---
+ALL:
+ - 127.0.0.1       	localhost
+PROD:
+ - 100.100.100.100	example.com
+ 
+ STG:
+  - 100.100.100.100	example.com

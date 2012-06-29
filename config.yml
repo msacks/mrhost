@@ -1,0 +1,8 @@
+---
+out_file: /etc/hosts
+local_file: local_hosts.yml
+global_file: global_hosts.yml
+after_switch_cmds: 
+- /usr/bin/dscacheutil -flushcache
+cache_directories: 
+- /Users/matthew.sacks/Library/Caches/Safari
